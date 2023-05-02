@@ -17,9 +17,9 @@
 		EF56B3952A014ADE002CCE27 /* GPFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = EF56B3942A014ADE002CCE27 /* GPFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EF56B3982A014ADE002CCE27 /* GPFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF56B3922A014ADE002CCE27 /* GPFoundation.framework */; };
 		EF56B3992A014ADE002CCE27 /* GPFoundation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EF56B3922A014ADE002CCE27 /* GPFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		EF56B3B62A014AFF002CCE27 /* CGUIComponents.h in Headers */ = {isa = PBXBuildFile; fileRef = EF56B3B52A014AFF002CCE27 /* CGUIComponents.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EF56B3B92A014AFF002CCE27 /* CGUIComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF56B3B32A014AFF002CCE27 /* CGUIComponents.framework */; };
-		EF56B3BA2A014AFF002CCE27 /* CGUIComponents.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EF56B3B32A014AFF002CCE27 /* CGUIComponents.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EF56B3B62A014AFF002CCE27 /* GPUIComponents.h in Headers */ = {isa = PBXBuildFile; fileRef = EF56B3B52A014AFF002CCE27 /* GPUIComponents.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EF56B3B92A014AFF002CCE27 /* GPUIComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF56B3B32A014AFF002CCE27 /* GPUIComponents.framework */; };
+		EF56B3BA2A014AFF002CCE27 /* GPUIComponents.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EF56B3B32A014AFF002CCE27 /* GPUIComponents.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EF56B3BE2A014B0A002CCE27 /* GPFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF56B3922A014ADE002CCE27 /* GPFoundation.framework */; };
 		EF56B3BF2A014B0A002CCE27 /* GPFoundation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EF56B3922A014ADE002CCE27 /* GPFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -62,7 +62,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				EF56B3BA2A014AFF002CCE27 /* CGUIComponents.framework in Embed Frameworks */,
+				EF56B3BA2A014AFF002CCE27 /* GPUIComponents.framework in Embed Frameworks */,
 				EF56B3992A014ADE002CCE27 /* GPFoundation.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -98,8 +98,8 @@
 		EF56B38A2A014AA9002CCE27 /* GnosisPay.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GnosisPay.entitlements; sourceTree = "<group>"; };
 		EF56B3922A014ADE002CCE27 /* GPFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GPFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF56B3942A014ADE002CCE27 /* GPFoundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPFoundation.h; sourceTree = "<group>"; };
-		EF56B3B32A014AFF002CCE27 /* CGUIComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CGUIComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EF56B3B52A014AFF002CCE27 /* CGUIComponents.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGUIComponents.h; sourceTree = "<group>"; };
+		EF56B3B32A014AFF002CCE27 /* GPUIComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GPUIComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF56B3B52A014AFF002CCE27 /* GPUIComponents.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPUIComponents.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +108,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF56B3982A014ADE002CCE27 /* GPFoundation.framework in Frameworks */,
-				EF56B3B92A014AFF002CCE27 /* CGUIComponents.framework in Frameworks */,
+				EF56B3B92A014AFF002CCE27 /* GPUIComponents.framework in Frameworks */,
 				C27B4592190651C5A85F9DCF /* Pods_GnosisPay.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -178,7 +178,7 @@
 				EF56B35D2A0146DC002CCE27 /* GnosisPay.app */,
 				EF56B36D2A0146DD002CCE27 /* GnosisPayTests.xctest */,
 				EF56B3922A014ADE002CCE27 /* GPFoundation.framework */,
-				EF56B3B32A014AFF002CCE27 /* CGUIComponents.framework */,
+				EF56B3B32A014AFF002CCE27 /* GPUIComponents.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -235,12 +235,12 @@
 			path = GPFoundation;
 			sourceTree = "<group>";
 		};
-		EF56B3B42A014AFF002CCE27 /* CGUIComponents */ = {
+		EF56B3B42A014AFF002CCE27 /* GPUIComponents */ = {
 			isa = PBXGroup;
 			children = (
-				EF56B3B52A014AFF002CCE27 /* CGUIComponents.h */,
+				EF56B3B52A014AFF002CCE27 /* GPUIComponents.h */,
 			);
-			path = CGUIComponents;
+			path = GPUIComponents;
 			sourceTree = "<group>";
 		};
 		EF56B3C32A014B1E002CCE27 /* L1 */ = {
@@ -254,7 +254,7 @@
 		EF56B3C42A014B26002CCE27 /* L2 */ = {
 			isa = PBXGroup;
 			children = (
-				EF56B3B42A014AFF002CCE27 /* CGUIComponents */,
+				EF56B3B42A014AFF002CCE27 /* GPUIComponents */,
 			);
 			path = L2;
 			sourceTree = "<group>";
@@ -306,7 +306,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF56B3B62A014AFF002CCE27 /* CGUIComponents.h in Headers */,
+				EF56B3B62A014AFF002CCE27 /* GPUIComponents.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,9 +372,9 @@
 			productReference = EF56B3922A014ADE002CCE27 /* GPFoundation.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		EF56B3B22A014AFF002CCE27 /* CGUIComponents */ = {
+		EF56B3B22A014AFF002CCE27 /* GPUIComponents */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EF56B3BB2A014AFF002CCE27 /* Build configuration list for PBXNativeTarget "CGUIComponents" */;
+			buildConfigurationList = EF56B3BB2A014AFF002CCE27 /* Build configuration list for PBXNativeTarget "GPUIComponents" */;
 			buildPhases = (
 				EF56B3AE2A014AFF002CCE27 /* Headers */,
 				EF56B3AF2A014AFF002CCE27 /* Sources */,
@@ -387,9 +387,9 @@
 			dependencies = (
 				EF56B3C12A014B0A002CCE27 /* PBXTargetDependency */,
 			);
-			name = CGUIComponents;
+			name = GPUIComponents;
 			productName = CGUIComponents;
-			productReference = EF56B3B32A014AFF002CCE27 /* CGUIComponents.framework */;
+			productReference = EF56B3B32A014AFF002CCE27 /* GPUIComponents.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -433,7 +433,7 @@
 				EF56B35C2A0146DC002CCE27 /* GnosisPay */,
 				EF56B36C2A0146DD002CCE27 /* GnosisPayTests */,
 				EF56B3912A014ADE002CCE27 /* GPFoundation */,
-				EF56B3B22A014AFF002CCE27 /* CGUIComponents */,
+				EF56B3B22A014AFF002CCE27 /* GPUIComponents */,
 			);
 		};
 /* End PBXProject section */
@@ -582,7 +582,7 @@
 		};
 		EF56B3B82A014AFF002CCE27 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = EF56B3B22A014AFF002CCE27 /* CGUIComponents */;
+			target = EF56B3B22A014AFF002CCE27 /* GPUIComponents */;
 			targetProxy = EF56B3B72A014AFF002CCE27 /* PBXContainerItemProxy */;
 		};
 		EF56B3C12A014B0A002CCE27 /* PBXTargetDependency */ = {
@@ -911,7 +911,7 @@
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
-				PRODUCT_BUNDLE_IDENTIFIER = io.gnosis.CGUIComponents;
+				PRODUCT_BUNDLE_IDENTIFIER = io.gnosis.GPUIComponents;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -944,7 +944,7 @@
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
-				PRODUCT_BUNDLE_IDENTIFIER = io.gnosis.CGUIComponents;
+				PRODUCT_BUNDLE_IDENTIFIER = io.gnosis.GPUIComponents;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -994,7 +994,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EF56B3BB2A014AFF002CCE27 /* Build configuration list for PBXNativeTarget "CGUIComponents" */ = {
+		EF56B3BB2A014AFF002CCE27 /* Build configuration list for PBXNativeTarget "GPUIComponents" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EF56B3BC2A014AFF002CCE27 /* Debug */,
