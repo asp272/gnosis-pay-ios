@@ -14,6 +14,14 @@
 		EF56B3652A0146DD002CCE27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF56B3642A0146DD002CCE27 /* Assets.xcassets */; };
 		EF56B3682A0146DD002CCE27 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF56B3672A0146DD002CCE27 /* Preview Assets.xcassets */; };
 		EF56B3722A0146DD002CCE27 /* GnosisPayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF56B3712A0146DD002CCE27 /* GnosisPayTests.swift */; };
+		EF56B3952A014ADE002CCE27 /* GPFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = EF56B3942A014ADE002CCE27 /* GPFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EF56B3982A014ADE002CCE27 /* GPFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF56B3922A014ADE002CCE27 /* GPFoundation.framework */; };
+		EF56B3992A014ADE002CCE27 /* GPFoundation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EF56B3922A014ADE002CCE27 /* GPFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EF56B3B62A014AFF002CCE27 /* CGUIComponents.h in Headers */ = {isa = PBXBuildFile; fileRef = EF56B3B52A014AFF002CCE27 /* CGUIComponents.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EF56B3B92A014AFF002CCE27 /* CGUIComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF56B3B32A014AFF002CCE27 /* CGUIComponents.framework */; };
+		EF56B3BA2A014AFF002CCE27 /* CGUIComponents.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EF56B3B32A014AFF002CCE27 /* CGUIComponents.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EF56B3BE2A014B0A002CCE27 /* GPFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF56B3922A014ADE002CCE27 /* GPFoundation.framework */; };
+		EF56B3BF2A014B0A002CCE27 /* GPFoundation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EF56B3922A014ADE002CCE27 /* GPFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,7 +32,54 @@
 			remoteGlobalIDString = EF56B35C2A0146DC002CCE27;
 			remoteInfo = GnosisPay;
 		};
+		EF56B3962A014ADE002CCE27 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF56B3552A0146DC002CCE27 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF56B3912A014ADE002CCE27;
+			remoteInfo = GPFoundation;
+		};
+		EF56B3B72A014AFF002CCE27 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF56B3552A0146DC002CCE27 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF56B3B22A014AFF002CCE27;
+			remoteInfo = CGUIComponents;
+		};
+		EF56B3C02A014B0A002CCE27 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF56B3552A0146DC002CCE27 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF56B3912A014ADE002CCE27;
+			remoteInfo = GPFoundation;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EF56B39D2A014ADE002CCE27 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EF56B3BA2A014AFF002CCE27 /* CGUIComponents.framework in Embed Frameworks */,
+				EF56B3992A014ADE002CCE27 /* GPFoundation.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF56B3C22A014B0A002CCE27 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EF56B3BF2A014B0A002CCE27 /* GPFoundation.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		01775F265BB6A49C4702D7EF /* Pods-GnosisPayTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GnosisPayTests.release.xcconfig"; path = "Target Support Files/Pods-GnosisPayTests/Pods-GnosisPayTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -40,6 +95,11 @@
 		EF56B3672A0146DD002CCE27 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EF56B36D2A0146DD002CCE27 /* GnosisPayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GnosisPayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF56B3712A0146DD002CCE27 /* GnosisPayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GnosisPayTests.swift; sourceTree = "<group>"; };
+		EF56B38A2A014AA9002CCE27 /* GnosisPay.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GnosisPay.entitlements; sourceTree = "<group>"; };
+		EF56B3922A014ADE002CCE27 /* GPFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GPFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF56B3942A014ADE002CCE27 /* GPFoundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPFoundation.h; sourceTree = "<group>"; };
+		EF56B3B32A014AFF002CCE27 /* CGUIComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CGUIComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF56B3B52A014AFF002CCE27 /* CGUIComponents.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGUIComponents.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +107,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF56B3982A014ADE002CCE27 /* GPFoundation.framework in Frameworks */,
+				EF56B3B92A014AFF002CCE27 /* CGUIComponents.framework in Frameworks */,
 				C27B4592190651C5A85F9DCF /* Pods_GnosisPay.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -56,6 +118,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				498922A8EB754135940975E2 /* Pods_GnosisPayTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF56B38F2A014ADE002CCE27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF56B3B02A014AFF002CCE27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF56B3BE2A014B0A002CCE27 /* GPFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,15 +156,16 @@
 				D952BBB7FD61F91F93A0B2AD /* Pods-GnosisPayTests.debug.xcconfig */,
 				01775F265BB6A49C4702D7EF /* Pods-GnosisPayTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
 		EF56B3542A0146DC002CCE27 = {
 			isa = PBXGroup;
 			children = (
-				EF56B35F2A0146DC002CCE27 /* GnosisPay */,
-				EF56B3702A0146DD002CCE27 /* GnosisPayTests */,
+				EF56B3C52A014B35002CCE27 /* App */,
+				EF56B3C42A014B26002CCE27 /* L2 */,
+				EF56B3C32A014B1E002CCE27 /* L1 */,
+				EF56B3C82A014B6B002CCE27 /* Tests */,
 				EF56B35E2A0146DC002CCE27 /* Products */,
 				E77D4249B7F9128BB3F52B6E /* Pods */,
 				DD8AC92FA717E7FEF54D7D5C /* Frameworks */,
@@ -99,6 +177,8 @@
 			children = (
 				EF56B35D2A0146DC002CCE27 /* GnosisPay.app */,
 				EF56B36D2A0146DD002CCE27 /* GnosisPayTests.xctest */,
+				EF56B3922A014ADE002CCE27 /* GPFoundation.framework */,
+				EF56B3B32A014AFF002CCE27 /* CGUIComponents.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -106,9 +186,12 @@
 		EF56B35F2A0146DC002CCE27 /* GnosisPay */ = {
 			isa = PBXGroup;
 			children = (
+				EF56B38B2A014ABD002CCE27 /* Factories */,
+				EF56B38C2A014AC5002CCE27 /* Modules */,
 				EF56B3602A0146DC002CCE27 /* GnosisPayApp.swift */,
 				EF56B3622A0146DC002CCE27 /* ContentView.swift */,
-				EF56B3642A0146DD002CCE27 /* Assets.xcassets */,
+				EF56B3C62A014B42002CCE27 /* Configurations */,
+				EF56B3C72A014B53002CCE27 /* Resources */,
 				EF56B3662A0146DD002CCE27 /* Preview Content */,
 			);
 			path = GnosisPay;
@@ -130,7 +213,104 @@
 			path = GnosisPayTests;
 			sourceTree = "<group>";
 		};
+		EF56B38B2A014ABD002CCE27 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
+		EF56B38C2A014AC5002CCE27 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		EF56B3932A014ADE002CCE27 /* GPFoundation */ = {
+			isa = PBXGroup;
+			children = (
+				EF56B3942A014ADE002CCE27 /* GPFoundation.h */,
+			);
+			path = GPFoundation;
+			sourceTree = "<group>";
+		};
+		EF56B3B42A014AFF002CCE27 /* CGUIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				EF56B3B52A014AFF002CCE27 /* CGUIComponents.h */,
+			);
+			path = CGUIComponents;
+			sourceTree = "<group>";
+		};
+		EF56B3C32A014B1E002CCE27 /* L1 */ = {
+			isa = PBXGroup;
+			children = (
+				EF56B3932A014ADE002CCE27 /* GPFoundation */,
+			);
+			path = L1;
+			sourceTree = "<group>";
+		};
+		EF56B3C42A014B26002CCE27 /* L2 */ = {
+			isa = PBXGroup;
+			children = (
+				EF56B3B42A014AFF002CCE27 /* CGUIComponents */,
+			);
+			path = L2;
+			sourceTree = "<group>";
+		};
+		EF56B3C52A014B35002CCE27 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				EF56B35F2A0146DC002CCE27 /* GnosisPay */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		EF56B3C62A014B42002CCE27 /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				EF56B38A2A014AA9002CCE27 /* GnosisPay.entitlements */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+		EF56B3C72A014B53002CCE27 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EF56B3642A0146DD002CCE27 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EF56B3C82A014B6B002CCE27 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				EF56B3702A0146DD002CCE27 /* GnosisPayTests */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		EF56B38D2A014ADE002CCE27 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF56B3952A014ADE002CCE27 /* GPFoundation.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF56B3AE2A014AFF002CCE27 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF56B3B62A014AFF002CCE27 /* CGUIComponents.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		EF56B35C2A0146DC002CCE27 /* GnosisPay */ = {
@@ -142,10 +322,13 @@
 				EF56B35A2A0146DC002CCE27 /* Frameworks */,
 				EF56B35B2A0146DC002CCE27 /* Resources */,
 				79A3BE518093A05B8F3AF17B /* [CP] Embed Pods Frameworks */,
+				EF56B39D2A014ADE002CCE27 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				EF56B3972A014ADE002CCE27 /* PBXTargetDependency */,
+				EF56B3B82A014AFF002CCE27 /* PBXTargetDependency */,
 			);
 			name = GnosisPay;
 			productName = GnosisPay;
@@ -171,6 +354,44 @@
 			productReference = EF56B36D2A0146DD002CCE27 /* GnosisPayTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		EF56B3912A014ADE002CCE27 /* GPFoundation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF56B39A2A014ADE002CCE27 /* Build configuration list for PBXNativeTarget "GPFoundation" */;
+			buildPhases = (
+				EF56B38D2A014ADE002CCE27 /* Headers */,
+				EF56B38E2A014ADE002CCE27 /* Sources */,
+				EF56B38F2A014ADE002CCE27 /* Frameworks */,
+				EF56B3902A014ADE002CCE27 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GPFoundation;
+			productName = GPFoundation;
+			productReference = EF56B3922A014ADE002CCE27 /* GPFoundation.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EF56B3B22A014AFF002CCE27 /* CGUIComponents */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF56B3BB2A014AFF002CCE27 /* Build configuration list for PBXNativeTarget "CGUIComponents" */;
+			buildPhases = (
+				EF56B3AE2A014AFF002CCE27 /* Headers */,
+				EF56B3AF2A014AFF002CCE27 /* Sources */,
+				EF56B3B02A014AFF002CCE27 /* Frameworks */,
+				EF56B3B12A014AFF002CCE27 /* Resources */,
+				EF56B3C22A014B0A002CCE27 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF56B3C12A014B0A002CCE27 /* PBXTargetDependency */,
+			);
+			name = CGUIComponents;
+			productName = CGUIComponents;
+			productReference = EF56B3B32A014AFF002CCE27 /* CGUIComponents.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -187,6 +408,12 @@
 					EF56B36C2A0146DD002CCE27 = {
 						CreatedOnToolsVersion = 14.3;
 						TestTargetID = EF56B35C2A0146DC002CCE27;
+					};
+					EF56B3912A014ADE002CCE27 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					EF56B3B22A014AFF002CCE27 = {
+						CreatedOnToolsVersion = 14.3;
 					};
 				};
 			};
@@ -205,6 +432,8 @@
 			targets = (
 				EF56B35C2A0146DC002CCE27 /* GnosisPay */,
 				EF56B36C2A0146DD002CCE27 /* GnosisPayTests */,
+				EF56B3912A014ADE002CCE27 /* GPFoundation */,
+				EF56B3B22A014AFF002CCE27 /* CGUIComponents */,
 			);
 		};
 /* End PBXProject section */
@@ -220,6 +449,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		EF56B36B2A0146DD002CCE27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF56B3902A014ADE002CCE27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF56B3B12A014AFF002CCE27 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -310,6 +553,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EF56B38E2A014ADE002CCE27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF56B3AF2A014AFF002CCE27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -317,6 +574,21 @@
 			isa = PBXTargetDependency;
 			target = EF56B35C2A0146DC002CCE27 /* GnosisPay */;
 			targetProxy = EF56B36E2A0146DD002CCE27 /* PBXContainerItemProxy */;
+		};
+		EF56B3972A014ADE002CCE27 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF56B3912A014ADE002CCE27 /* GPFoundation */;
+			targetProxy = EF56B3962A014ADE002CCE27 /* PBXContainerItemProxy */;
+		};
+		EF56B3B82A014AFF002CCE27 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF56B3B22A014AFF002CCE27 /* CGUIComponents */;
+			targetProxy = EF56B3B72A014AFF002CCE27 /* PBXContainerItemProxy */;
+		};
+		EF56B3C12A014B0A002CCE27 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF56B3912A014ADE002CCE27 /* GPFoundation */;
+			targetProxy = EF56B3C02A014B0A002CCE27 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -441,9 +713,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = App/GnosisPay/Configurations/GnosisPay.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"GnosisPay/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"App/GnosisPay/Preview Content\"";
 				DEVELOPMENT_TEAM = 4897UJ6D8C;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -475,9 +748,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = App/GnosisPay/Configurations/GnosisPay.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"GnosisPay/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"App/GnosisPay/Preview Content\"";
 				DEVELOPMENT_TEAM = 4897UJ6D8C;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -551,6 +825,142 @@
 			};
 			name = Release;
 		};
+		EF56B39B2A014ADE002CCE27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 4897UJ6D8C;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = io.gnosis.GPFoundation;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EF56B39C2A014ADE002CCE27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 4897UJ6D8C;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = io.gnosis.GPFoundation;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EF56B3BC2A014AFF002CCE27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 4897UJ6D8C;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = io.gnosis.CGUIComponents;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EF56B3BD2A014AFF002CCE27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 4897UJ6D8C;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = io.gnosis.CGUIComponents;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -577,6 +987,24 @@
 			buildConfigurations = (
 				EF56B3852A0146DD002CCE27 /* Debug */,
 				EF56B3862A0146DD002CCE27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF56B39A2A014ADE002CCE27 /* Build configuration list for PBXNativeTarget "GPFoundation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF56B39B2A014ADE002CCE27 /* Debug */,
+				EF56B39C2A014ADE002CCE27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF56B3BB2A014AFF002CCE27 /* Build configuration list for PBXNativeTarget "CGUIComponents" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF56B3BC2A014AFF002CCE27 /* Debug */,
+				EF56B3BD2A014AFF002CCE27 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
