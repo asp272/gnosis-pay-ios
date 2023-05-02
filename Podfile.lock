@@ -1,0 +1,22 @@
+PODS:
+  - TangemSdk (3.4.0)
+
+DEPENDENCIES:
+  - TangemSdk (from `https://github.com/Tangem/tangem-sdk-ios.git`, tag `develop-219`)
+
+EXTERNAL SOURCES:
+  TangemSdk:
+    :git: https://github.com/Tangem/tangem-sdk-ios.git
+    :tag: develop-219
+
+CHECKOUT OPTIONS:
+  TangemSdk:
+    :git: https://github.com/Tangem/tangem-sdk-ios.git
+    :tag: develop-219
+
+SPEC CHECKSUMS:
+  TangemSdk: d628b627e16634b97c2536f265bdcddc9734c617
+
+PODFILE CHECKSUM: 317226bff5f3e845db80e7da18e22fb005b558c8
+
+COCOAPODS: 1.12.1
